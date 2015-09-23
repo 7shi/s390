@@ -1,0 +1,8 @@
+syntax: glob
+*.o
+*.s
+*.out
+*core
+04070a.d
+long.d
+tmp/
