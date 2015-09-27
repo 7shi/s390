@@ -1,5 +1,5 @@
 TARGET = allop.d allop-2.d 05.d 07.d 04.d 0a.d long2.d \
-         47.d a5.d b2.d long4.d long-2.d 4.d
+         47.d a5.d b2.d long4.d long-2.d
 
 AS  = s390-linux-as
 DIS = s390-linux-objdump -d
@@ -54,9 +54,6 @@ long.d: long.sh allop.d
 
 long-2.d: long.d
 	grep -v long $< | grep -v nopr > $@
-
-4.d: 4.sh allop.d
-	./$<
 
 clean:
 	rm -rf tmp long.d *.o *.s a.out
