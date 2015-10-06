@@ -1,5 +1,6 @@
 TARGET = allop.d allop-2.d 05.d 07.d 04.d 0a.d long2.d \
-         47.d a5-a7.d a7x4.d b2.d long4.d b92d-b98e.d long-2.d
+         47.d a5-a7.d a7x4.d b2.d long4.d b92d-b98e.d \
+         d0-e1-f0-f1.d long-2.d
 
 AS  = s390-linux-as
 DIS = s390-linux-objdump -d
@@ -54,6 +55,9 @@ long4.s:
 
 b92d-b98e.s:
 	for i in 2d 8e; do for j in {0..15}; do printf ".byte 0xb9,0x%s,0x3%x,0x56\n" $$i $$j; done; done > $@
+
+d0-e1-f0-f1.s:
+	for i in d0 e1 f0 f1; do for j in {0..255}; do printf ".byte 0x%s,0x%02x,0x34,0x56,0x78,0x9a\n" $$i $$j; done; done > $@
 
 long.d: long.sh allop.d
 	./$<
