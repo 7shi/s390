@@ -1,6 +1,6 @@
 TARGET = allop.d allop-2.d 05.d 07.d 04.d 0a.d long2.d \
          47.d a5-a7.d a7x4.d b2.d long4.d b92d-b98e.d \
-         d0-e1-f0-f1.d c4-c6-c8.d long-2.d
+         d0-e1-f0-f1.d c4-c6-c8.d eb.d long-2.d
 
 AS  = s390-linux-as
 DIS = s390-linux-objdump -d
@@ -64,6 +64,12 @@ c4-c6-c8.s:
 
 c4-c6-c8.d: c4-c6-c8.o
 	$(DIS) $< | grep $$'\tc' > $@
+
+eb.s:
+	for i in {0..255}; do printf ".byte 0xeb,0x12,0x34,0x56,0x78,0x%02x,7,7\n" $$i; done > $@
+
+eb.d: eb.o
+	$(DIS) $< | grep $$'\te' > $@
 
 long.d: long.sh allop.d
 	./$<
