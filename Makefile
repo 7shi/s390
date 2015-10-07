@@ -19,7 +19,7 @@ allop-2.d: allop-2.sh
 
 .SUFFIXES: .o .d
 .o.d:
-	$(DIS) -d $< > $@
+	$(DIS) $< > $@
 
 .SECONDARY: $(TARGET:.d=.o)
 
