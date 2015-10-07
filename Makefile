@@ -1,4 +1,5 @@
-TARGET = allop.d allop-2.d 05.d 07.d 04.d 0a.d long2.d \
+TARGET = allop.d allop-2.d last.txt \
+         05.d 07.d 04.d 0a.d long2.d \
          47.d a5-a7.d a7x4.d b2.d long4.d b92d-b98e.d \
          d0-e1-f0-f1.d c4-c6-c8.d eb.d eb_23.d long6.d
 
@@ -11,6 +12,9 @@ allop.d: allop.sh
 	./$<
 
 allop-2.d: allop-2.sh
+	./$<
+
+last.txt: last.sh
 	./$<
 
 .SUFFIXES: .s .o
