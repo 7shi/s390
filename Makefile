@@ -1,6 +1,6 @@
 TARGET = allop.d allop-2.d 05.d 07.d 04.d 0a.d long2.d \
          47.d a5-a7.d a7x4.d b2.d long4.d b92d-b98e.d \
-         d0-e1-f0-f1.d c4-c6-c8.d eb.d eb_23.d
+         d0-e1-f0-f1.d c4-c6-c8.d eb.d eb_23.d long6.d
 
 AS  = s390-linux-as
 DIS = s390-linux-objdump -d
@@ -73,6 +73,12 @@ eb.d: eb.o
 
 eb_23.s:
 	for i in {0..15}; do printf ".byte 0xeb,0x1%x,0x34,0x56,0x78,0x23\n" $$i; done > $@
+
+long6.s: allop-2.d
+	for i in `grep long allop-2.d | grep "^[c-f]" | cut -c1-2`; do for j in {0..255}; do printf ".byte 0x%s,0x%02x,0x34,0x56,0x78,0x9a,7,7\n" $$i $$j; done; done > $@
+
+long6.d: long6.o
+	$(DIS) $< | grep $$'\t[c-f]. ' > $@
 
 clean:
 	rm -rf tmp *.o *.s a.out
