@@ -74,5 +74,5 @@ long-2.d: long.d
 clean:
 	rm -rf tmp long.d *.o *.s a.out
 
-distclean:
+distclean: clean
 	rm -f $(TARGET)
