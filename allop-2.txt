@@ -1,0 +1,777 @@
+01 01             	pr
+01 02             	upt
+01 04             	ptff
+01 07             	sckpf
+01 0a             	pfpo
+01 0b             	tam
+01 0c             	sam24
+01 0d             	sam31
+01 0e             	sam64
+01 ff             	trap2
+04 -0             	spm
+05 --             	balr
+06 --             	bctr
+07 0-             	nopr
+07 1-             	bor
+07 2-             	bhr
+07 3-             	bnler
+07 4-             	blr
+07 5-             	bnher
+07 6-             	blhr
+07 7-             	bner
+07 8-             	ber
+07 9-             	bnlhr
+07 a-             	bher
+07 b-             	bnlr
+07 c-             	bler
+07 d-             	bnhr
+07 e-             	bnor
+07 f-             	br
+0a --             	svc
+0b --             	bsm
+0c --             	bassm
+0d --             	basr
+0e --             	mvcl
+0f --             	clcl
+10 --             	lpr
+11 --             	lnr
+12 --             	ltr
+13 --             	lcr
+14 --             	nr
+15 --             	clr
+16 --             	or
+17 --             	xr
+18 --             	lr
+19 --             	cr
+1a --             	ar
+1b --             	sr
+1c --             	mr
+1d --             	dr
+1e --             	alr
+1f --             	slr
+20 --             	lpdr
+21 --             	lndr
+22 --             	ltdr
+23 --             	lcdr
+24 --             	hdr
+25 --             	ldxr
+26 --             	mxr
+27 --             	mxdr
+28 --             	ldr
+29 --             	cdr
+2a --             	adr
+2b --             	sdr
+2c --             	mdr
+2d --             	ddr
+2e --             	awr
+2f --             	swr
+30 --             	lper
+31 --             	lner
+32 --             	lter
+33 --             	lcer
+34 --             	her
+35 --             	ledr
+36 --             	axr
+37 --             	sxr
+38 --             	ler
+39 --             	cer
+3a --             	aer
+3b --             	ser
+3c --             	mder
+3d --             	der
+3e --             	aur
+3f --             	sur
+40 -- -- --       	sth
+41 -- -- --       	la
+42 -- -- --       	stc
+43 -- -- --       	ic
+44 -- -- --       	ex
+45 -- -- --       	bal
+46 -- -- --       	bct
+47 0- -- --       	nop
+47 1- -- --       	bo
+47 2- -- --       	bh
+47 3- -- --       	bnle
+47 4- -- --       	bl
+47 5- -- --       	bnhe
+47 6- -- --       	blh
+47 7- -- --       	bne
+47 8- -- --       	be
+47 9- -- --       	bnlh
+47 a- -- --       	bhe
+47 b- -- --       	bnl
+47 c- -- --       	ble
+47 d- -- --       	bnh
+47 e- -- --       	bno
+47 f- -- --       	b
+48 -- -- --       	lh
+49 -- -- --       	ch
+4a -- -- --       	ah
+4b -- -- --       	sh
+4c -- -- --       	mh
+4d -- -- --       	bas
+4e -- -- --       	cvd
+4f -- -- --       	cvb
+50 -- -- --       	st
+51 -- -- --       	lae
+54 -- -- --       	n
+55 -- -- --       	cl
+56 -- -- --       	o
+57 -- -- --       	x
+58 -- -- --       	l
+59 -- -- --       	c
+5a -- -- --       	a
+5b -- -- --       	s
+5c -- -- --       	m
+5d -- -- --       	d
+5e -- -- --       	al
+5f -- -- --       	sl
+60 -- -- --       	std
+67 -- -- --       	mxd
+68 -- -- --       	ld
+69 -- -- --       	cd
+6a -- -- --       	ad
+6b -- -- --       	sd
+6c -- -- --       	md
+6d -- -- --       	dd
+6e -- -- --       	aw
+6f -- -- --       	sw
+70 -- -- --       	ste
+71 -- -- --       	ms
+78 -- -- --       	le
+79 -- -- --       	ce
+7a -- -- --       	ae
+7b -- -- --       	se
+7c -- -- --       	mde
+7d -- -- --       	de
+7e -- -- --       	au
+7f -- -- --       	su
+80 00 -- --       	ssm
+82 00 -- --       	lpsw
+83 -- -- --       	diag
+84 -- -- --       	brxh
+85 -- -- --       	brxle
+86 -- -- --       	bxh
+87 -- -- --       	bxle
+88 -0 -- --       	srl
+89 -0 -- --       	sll
+8a -0 -- --       	sra
+8b -0 -- --       	sla
+8c -0 -- --       	srdl
+8d -0 -- --       	sldl
+8e -0 -- --       	srda
+8f -0 -- --       	slda
+90 -- -- --       	stm
+91 -- -- --       	tm
+92 -- -- --       	mvi
+93 00 -- --       	ts
+94 -- -- --       	ni
+95 -- -- --       	cli
+96 -- -- --       	oi
+97 -- -- --       	xi
+98 -- -- --       	lm
+99 -- -- --       	trace
+9a -- -- --       	lam
+9b -- -- --       	stam
+a5 -0 -- --       	iihh
+a5 -1 -- --       	iihl
+a5 -2 -- --       	iilh
+a5 -3 -- --       	iill
+a5 -4 -- --       	nihh
+a5 -5 -- --       	nihl
+a5 -6 -- --       	nilh
+a5 -7 -- --       	nill
+a5 -8 -- --       	oihh
+a5 -9 -- --       	oihl
+a5 -a -- --       	oilh
+a5 -b -- --       	oill
+a5 -c -- --       	llihh
+a5 -d -- --       	llihl
+a5 -e -- --       	llilh
+a5 -f -- --       	llill
+a7 -0 -- --       	tmlh
+a7 -1 -- --       	tmll
+a7 -2 -- --       	tmhh
+a7 -3 -- --       	tmhl
+a7 -5 -- --       	bras
+a7 -6 -- --       	brct
+a7 -7 -- --       	brctg
+a7 -8 -- --       	lhi
+a7 -9 -- --       	lghi
+a7 -a -- --       	ahi
+a7 -b -- --       	aghi
+a7 -c -- --       	mhi
+a7 -d -- --       	mghi
+a7 -e -- --       	chi
+a7 -f -- --       	cghi
+a7 04 -- --       	brc
+a7 14 -- --       	jo
+a7 24 -- --       	jh
+a7 34 -- --       	jnle
+a7 44 -- --       	jl
+a7 54 -- --       	jnhe
+a7 64 -- --       	jlh
+a7 74 -- --       	jne
+a7 84 -- --       	je
+a7 94 -- --       	jnlh
+a7 a4 -- --       	jhe
+a7 b4 -- --       	jnl
+a7 c4 -- --       	jle
+a7 d4 -- --       	jnh
+a7 e4 -- --       	jno
+a7 f4 -- --       	j
+a8 -- -- --       	mvcle
+a9 -- -- --       	clcle
+ac -- -- --       	stnsm
+ad -- -- --       	stosm
+ae -- -- --       	sigp
+af -- -- --       	mc
+b1 -- -- --       	lra
+b2 02 -- --       	stidp
+b2 04 -- --       	sck
+b2 05 -- --       	stck
+b2 06 -- --       	sckc
+b2 07 -- --       	stckc
+b2 08 -- --       	spt
+b2 09 -- --       	stpt
+b2 0a -- --       	spka
+b2 10 -- --       	spx
+b2 11 -- --       	stpx
+b2 12 -- --       	stap
+b2 14 -- --       	sie
+b2 18 -- --       	pc
+b2 19 -- --       	sac
+b2 1a -- --       	cfc
+b2 32 -- --       	msch
+b2 33 -- --       	ssch
+b2 34 -- --       	stsch
+b2 35 -- --       	tsch
+b2 36 -- --       	tpi
+b2 39 -- --       	stcrw
+b2 3a -- --       	stcps
+b2 74 -- --       	siga
+b2 77 -- --       	rp
+b2 78 -- --       	stcke
+b2 79 -- --       	sacf
+b2 7c -- --       	stckf
+b2 7d -- --       	stsi
+b2 80 -- --       	lpp
+b2 84 -- --       	lcctl
+b2 85 -- --       	lpctl
+b2 86 -- --       	qsi
+b2 87 -- --       	lsctl
+b2 8e -- --       	qctri
+b2 99 -- --       	srnm
+b2 9c -- --       	stfpc
+b2 9d -- --       	lfpc
+b2 b0 -- --       	stfle
+b2 b1 -- --       	stfl
+b2 b2 -- --       	lpswe
+b2 b8 -- --       	srnmb
+b2 b9 -- --       	srnmt
+b2 bd -- --       	lfas
+b2 fc -- --       	tabort
+b2 ff -- --       	trap4
+b3 44 -- --       	ledbra
+b3 45 -- --       	ldxbra
+b3 46 -- --       	lexbra
+b3 47 -- --       	fixbra
+b3 53 -- --       	diebr
+b3 57 -- --       	fiebra
+b3 5b -- --       	didbr
+b3 5f -- --       	fidbra
+b3 90 -- --       	celfbr
+b3 91 -- --       	cdlfbr
+b3 92 -- --       	cxlfbr
+b3 94 -- --       	cefbra
+b3 95 -- --       	cdfbra
+b3 96 -- --       	cxfbra
+b3 98 -- --       	cfebra
+b3 99 -- --       	cfdbra
+b3 9a -- --       	cfxbra
+b3 9c -- --       	clfebr
+b3 9d -- --       	clfdbr
+b3 9e -- --       	clfxbr
+b3 a0 -- --       	celgbr
+b3 a1 -- --       	cdlgbr
+b3 a2 -- --       	cxlgbr
+b3 a4 -- --       	cegbra
+b3 a5 -- --       	cdgbra
+b3 a6 -- --       	cxgbra
+b3 a8 -- --       	cgebra
+b3 a9 -- --       	cgdbra
+b3 aa -- --       	cgxbra
+b3 ac -- --       	clgebr
+b3 ad -- --       	clgdbr
+b3 ae -- --       	clgxbr
+b3 d0 -- --       	mdtra
+b3 d1 -- --       	ddtra
+b3 d2 -- --       	adtra
+b3 d3 -- --       	sdtra
+b3 d5 -- --       	ledtr
+b3 d7 -- --       	fidtr
+b3 d8 -- --       	mxtra
+b3 d9 -- --       	dxtra
+b3 da -- --       	axtra
+b3 db -- --       	sxtra
+b3 dd -- --       	ldxtr
+b3 df -- --       	fixtr
+b3 e1 -- --       	cgdtra
+b3 e9 -- --       	cgxtra
+b3 f1 -- --       	cdgtra
+b3 f5 -- --       	qadtr
+b3 f7 -- --       	rrdtr
+b3 f9 -- --       	cxgtra
+b3 fd -- --       	qaxtr
+b3 ff -- --       	rrxtr
+b6 -- -- --       	stctl
+b7 -- -- --       	lctl
+b9 2d -- --       	kmctr
+b9 41 -- --       	cfdtr
+b9 42 -- --       	clgdtr
+b9 43 -- --       	clfdtr
+b9 49 -- --       	cfxtr
+b9 4a -- --       	clgxtr
+b9 4b -- --       	clfxtr
+b9 51 -- --       	cdftr
+b9 52 -- --       	cdlgtr
+b9 53 -- --       	cdlftr
+b9 59 -- --       	cxftr
+b9 5a -- --       	cxlgtr
+b9 5b -- --       	cxlftr
+b9 8e -- --       	idte
+b9 8f -- --       	crdte
+b9 aa -- --       	lptea
+b9 c8 -- --       	ahhhr
+b9 c9 -- --       	shhhr
+b9 ca -- --       	alhhhr
+b9 cb -- --       	slhhhr
+b9 d8 -- --       	ahhlr
+b9 d9 -- --       	shhlr
+b9 da -- --       	alhhlr
+b9 db -- --       	slhhlr
+b9 e4 -- --       	ngrk
+b9 e6 -- --       	ogrk
+b9 e7 -- --       	xgrk
+b9 e8 -- --       	agrk
+b9 e9 -- --       	sgrk
+b9 ea -- --       	algrk
+b9 eb -- --       	slgrk
+b9 f4 -- --       	nrk
+b9 f6 -- --       	ork
+b9 f7 -- --       	xrk
+b9 f8 -- --       	ark
+b9 f9 -- --       	srk
+b9 fa -- --       	alrk
+b9 fb -- --       	slrk
+ba -- -- --       	cs
+bb -- -- --       	cds
+bd -- -- --       	clm
+be -- -- --       	stcm
+bf -- -- --       	icm
+c0 -0 -- -- -- -- 	larl
+c0 -1 -- -- -- -- 	lgfi
+c0 -5 -- -- -- -- 	brasl
+c0 -6 -- -- -- -- 	xihf
+c0 -7 -- -- -- -- 	xilf
+c0 -8 -- -- -- -- 	iihf
+c0 -9 -- -- -- -- 	iilf
+c0 -a -- -- -- -- 	nihf
+c0 -b -- -- -- -- 	nilf
+c0 -c -- -- -- -- 	oihf
+c0 -d -- -- -- -- 	oilf
+c0 -e -- -- -- -- 	llihf
+c0 -f -- -- -- -- 	llilf
+c0 04 -- -- -- -- 	brcl
+c0 14 -- -- -- -- 	jgo
+c0 24 -- -- -- -- 	jgh
+c0 34 -- -- -- -- 	jgnle
+c0 44 -- -- -- -- 	jgl
+c0 54 -- -- -- -- 	jgnhe
+c0 64 -- -- -- -- 	jglh
+c0 74 -- -- -- -- 	jgne
+c0 84 -- -- -- -- 	jge
+c0 94 -- -- -- -- 	jgnlh
+c0 a4 -- -- -- -- 	jghe
+c0 b4 -- -- -- -- 	jgnl
+c0 c4 -- -- -- -- 	jgle
+c0 d4 -- -- -- -- 	jgnh
+c0 e4 -- -- -- -- 	jgno
+c0 f4 -- -- -- -- 	jg
+c2 -0 -- -- -- -- 	msgfi
+c2 -1 -- -- -- -- 	msfi
+c2 -4 -- -- -- -- 	slgfi
+c2 -5 -- -- -- -- 	slfi
+c2 -8 -- -- -- -- 	agfi
+c2 -9 -- -- -- -- 	afi
+c2 -a -- -- -- -- 	algfi
+c2 -b -- -- -- -- 	alfi
+c2 -c -- -- -- -- 	cgfi
+c2 -d -- -- -- -- 	cfi
+c2 -e -- -- -- -- 	clgfi
+c2 -f -- -- -- -- 	clfi
+c4 -2 -- -- -- -- 	llhrl
+c4 -4 -- -- -- -- 	lghrl
+c4 -5 -- -- -- -- 	lhrl
+c4 -6 -- -- -- -- 	llghrl
+c4 -7 -- -- -- -- 	sthrl
+c4 -8 -- -- -- -- 	lgrl
+c4 -b -- -- -- -- 	stgrl
+c4 -c -- -- -- -- 	lgfrl
+c4 -d -- -- -- -- 	lrl
+c4 -e -- -- -- -- 	llgfrl
+c4 -f -- -- -- -- 	strl
+c5 -- -- -- -- -- 	bprp
+c6 -0 -- -- -- -- 	exrl
+c6 -2 -- -- -- -- 	pfdrl
+c6 -4 -- -- -- -- 	cghrl
+c6 -5 -- -- -- -- 	chrl
+c6 -6 -- -- -- -- 	clghrl
+c6 -7 -- -- -- -- 	clhrl
+c6 -8 -- -- -- -- 	cgrl
+c6 -a -- -- -- -- 	clgrl
+c6 -c -- -- -- -- 	cgfrl
+c6 -d -- -- -- -- 	crl
+c6 -e -- -- -- -- 	clgfrl
+c6 -f -- -- -- -- 	clrl
+c7 -0 -- -- -- -- 	bpp
+c8 -0 -- -- -- -- 	mvcos
+c8 -1 -- -- -- -- 	ectg
+c8 -2 -- -- -- -- 	csst
+c8 -4 -- -- -- -- 	lpd
+c8 -5 -- -- -- -- 	lpdg
+cc -6 -- -- -- -- 	brcth
+cc -8 -- -- -- -- 	aih
+cc -a -- -- -- -- 	alsih
+cc -b -- -- -- -- 	alsihn
+cc -d -- -- -- -- 	cih
+cc -f -- -- -- -- 	clih
+d0 -- -- -- -- -- 	trtr
+d1 -- -- -- -- -- 	mvn
+d2 -- -- -- -- -- 	mvc
+d3 -- -- -- -- -- 	mvz
+d4 -- -- -- -- -- 	nc
+d5 -- -- -- -- -- 	clc
+d6 -- -- -- -- -- 	oc
+d7 -- -- -- -- -- 	xc
+d9 -- -- -- -- -- 	mvck
+da -- -- -- -- -- 	mvcp
+db -- -- -- -- -- 	mvcs
+dc -- -- -- -- -- 	tr
+dd -- -- -- -- -- 	trt
+de -- -- -- -- -- 	ed
+df -- -- -- -- -- 	edmk
+e1 -- -- -- -- -- 	pku
+e2 -- -- -- -- -- 	unpku
+e3 -- -- -- -- 02 	ltg
+e3 -- -- -- -- 03 	lrag
+e3 -- -- -- -- 04 	lg
+e3 -- -- -- -- 06 	cvby
+e3 -- -- -- -- 08 	ag
+e3 -- -- -- -- 09 	sg
+e3 -- -- -- -- 0a 	alg
+e3 -- -- -- -- 0b 	slg
+e3 -- -- -- -- 0c 	msg
+e3 -- -- -- -- 0d 	dsg
+e3 -- -- -- -- 0e 	cvbg
+e3 -- -- -- -- 0f 	lrvg
+e3 -- -- -- -- 12 	lt
+e3 -- -- -- -- 13 	lray
+e3 -- -- -- -- 14 	lgf
+e3 -- -- -- -- 15 	lgh
+e3 -- -- -- -- 16 	llgf
+e3 -- -- -- -- 17 	llgt
+e3 -- -- -- -- 18 	agf
+e3 -- -- -- -- 19 	sgf
+e3 -- -- -- -- 1a 	algf
+e3 -- -- -- -- 1b 	slgf
+e3 -- -- -- -- 1c 	msgf
+e3 -- -- -- -- 1d 	dsgf
+e3 -- -- -- -- 1e 	lrv
+e3 -- -- -- -- 1f 	lrvh
+e3 -- -- -- -- 20 	cg
+e3 -- -- -- -- 21 	clg
+e3 -- -- -- -- 24 	stg
+e3 -- -- -- -- 25 	ntstg
+e3 -- -- -- -- 26 	cvdy
+e3 -- -- -- -- 2e 	cvdg
+e3 -- -- -- -- 2f 	strvg
+e3 -- -- -- -- 30 	cgf
+e3 -- -- -- -- 31 	clgf
+e3 -- -- -- -- 32 	ltgf
+e3 -- -- -- -- 34 	cgh
+e3 -- -- -- -- 36 	pfd
+e3 -- -- -- -- 3e 	strv
+e3 -- -- -- -- 3f 	strvh
+e3 -- -- -- -- 46 	bctg
+e3 -- -- -- -- 50 	sty
+e3 -- -- -- -- 51 	msy
+e3 -- -- -- -- 54 	ny
+e3 -- -- -- -- 55 	cly
+e3 -- -- -- -- 56 	oy
+e3 -- -- -- -- 57 	xy
+e3 -- -- -- -- 58 	ly
+e3 -- -- -- -- 59 	cy
+e3 -- -- -- -- 5a 	ay
+e3 -- -- -- -- 5b 	sy
+e3 -- -- -- -- 5c 	mfy
+e3 -- -- -- -- 5e 	aly
+e3 -- -- -- -- 5f 	sly
+e3 -- -- -- -- 70 	sthy
+e3 -- -- -- -- 71 	lay
+e3 -- -- -- -- 72 	stcy
+e3 -- -- -- -- 73 	icy
+e3 -- -- -- -- 75 	laey
+e3 -- -- -- -- 76 	lb
+e3 -- -- -- -- 77 	lgb
+e3 -- -- -- -- 78 	lhy
+e3 -- -- -- -- 79 	chy
+e3 -- -- -- -- 7a 	ahy
+e3 -- -- -- -- 7b 	shy
+e3 -- -- -- -- 7c 	mhy
+e3 -- -- -- -- 80 	ng
+e3 -- -- -- -- 81 	og
+e3 -- -- -- -- 82 	xg
+e3 -- -- -- -- 85 	lgat
+e3 -- -- -- -- 86 	mlg
+e3 -- -- -- -- 87 	dlg
+e3 -- -- -- -- 88 	alcg
+e3 -- -- -- -- 89 	slbg
+e3 -- -- -- -- 8e 	stpq
+e3 -- -- -- -- 8f 	lpq
+e3 -- -- -- -- 90 	llgc
+e3 -- -- -- -- 91 	llgh
+e3 -- -- -- -- 94 	llc
+e3 -- -- -- -- 95 	llh
+e3 -- -- -- -- 96 	ml
+e3 -- -- -- -- 97 	dl
+e3 -- -- -- -- 98 	alc
+e3 -- -- -- -- 99 	slb
+e3 -- -- -- -- 9c 	llgtat
+e3 -- -- -- -- 9d 	llgfat
+e3 -- -- -- -- 9f 	lat
+e3 -- -- -- -- c0 	lbh
+e3 -- -- -- -- c2 	llch
+e3 -- -- -- -- c3 	stch
+e3 -- -- -- -- c4 	lhh
+e3 -- -- -- -- c6 	llhh
+e3 -- -- -- -- c7 	sthh
+e3 -- -- -- -- c8 	lfhat
+e3 -- -- -- -- ca 	lfh
+e3 -- -- -- -- cb 	stfh
+e3 -- -- -- -- cd 	chf
+e3 -- -- -- -- cf 	clhf
+e5 00 -- -- -- -- 	lasp
+e5 01 -- -- -- -- 	tprot
+e5 02 -- -- -- -- 	strag
+e5 0e -- -- -- -- 	mvcsk
+e5 0f -- -- -- -- 	mvcdk
+e5 44 -- -- -- -- 	mvhhi
+e5 48 -- -- -- -- 	mvghi
+e5 4c -- -- -- -- 	mvhi
+e5 54 -- -- -- -- 	chhsi
+e5 55 -- -- -- -- 	clhhsi
+e5 58 -- -- -- -- 	cghsi
+e5 59 -- -- -- -- 	clghsi
+e5 5c -- -- -- -- 	chsi
+e5 5d -- -- -- -- 	clfhsi
+e5 60 -- -- -- -- 	tbegin
+e5 61 -- -- -- -- 	tbeginc
+e8 -- -- -- -- -- 	mvcin
+e9 -- -- -- -- -- 	pka
+ea -- -- -- -- -- 	unpka
+eb -- -- -- -- 04 	lmg
+eb -- -- -- -- 0a 	srag
+eb -- -- -- -- 0b 	slag
+eb -- -- -- -- 0c 	srlg
+eb -- -- -- -- 0d 	sllg
+eb -- -- -- -- 0f 	tracg
+eb -- -- -- -- 14 	csy
+eb -- -- -- -- 1c 	rllg
+eb -- -- -- -- 1d 	rll
+eb -- -- -- -- 20 	clmh
+eb -- -- -- -- 21 	clmy
+eb -- -- -- -- 23 	clt
+eb -- -- -- -- 24 	stmg
+eb -- -- -- -- 25 	stctg
+eb -- -- -- -- 26 	stmh
+eb -- -- -- -- 2b 	clgt
+eb -- -- -- -- 2c 	stcmh
+eb -- -- -- -- 2d 	stcmy
+eb -- -- -- -- 2f 	lctlg
+eb -- -- -- -- 30 	csg
+eb -- -- -- -- 31 	cdsy
+eb -- -- -- -- 3e 	cdsg
+eb -- -- -- -- 44 	bxhg
+eb -- -- -- -- 45 	bxleg
+eb -- -- -- -- 4c 	ecag
+eb -- -- -- -- 51 	tmy
+eb -- -- -- -- 52 	mviy
+eb -- -- -- -- 54 	niy
+eb -- -- -- -- 55 	cliy
+eb -- -- -- -- 56 	oiy
+eb -- -- -- -- 57 	xiy
+eb -- -- -- -- 6a 	asi
+eb -- -- -- -- 6e 	alsi
+eb -- -- -- -- 7a 	agsi
+eb -- -- -- -- 7e 	algsi
+eb -- -- -- -- 80 	icmh
+eb -- -- -- -- 81 	icmy
+eb -- -- -- -- 8e 	mvclu
+eb -- -- -- -- 8f 	clclu
+eb -- -- -- -- 90 	stmy
+eb -- -- -- -- 96 	lmh
+eb -- -- -- -- 98 	lmy
+eb -- -- -- -- 9a 	lamy
+eb -- -- -- -- 9b 	stamy
+eb -- -- -- -- dc 	srak
+eb -- -- -- -- dd 	slak
+eb -- -- -- -- de 	srlk
+eb -- -- -- -- df 	sllk
+eb -- -- -- -- e2 	locg
+eb -- -- -- -- e3 	stocg
+eb -- -- -- -- e4 	lang
+eb -- -- -- -- e6 	laog
+eb -- -- -- -- e7 	laxg
+eb -- -- -- -- e8 	laag
+eb -- -- -- -- ea 	laalg
+eb -- -- -- -- f2 	loc
+eb -- -- -- -- f3 	stoc
+eb -- -- -- -- f4 	lan
+eb -- -- -- -- f6 	lao
+eb -- -- -- -- f7 	lax
+eb -- -- -- -- f8 	laa
+eb -- -- -- -- fa 	laal
+eb -1 -- -- -- e2 	locgo
+eb -1 -- -- -- e3 	stocgo
+eb -1 -- -- -- f2 	loco
+eb -1 -- -- -- f3 	stoco
+eb -2 -- -- -- 23 	clth
+eb -2 -- -- -- 2b 	clgth
+eb -2 -- -- -- e2 	locgh
+eb -2 -- -- -- e3 	stocgh
+eb -2 -- -- -- f2 	loch
+eb -2 -- -- -- f3 	stoch
+eb -3 -- -- -- e2 	locgnle
+eb -3 -- -- -- e3 	stocgnle
+eb -3 -- -- -- f2 	locnle
+eb -3 -- -- -- f3 	stocnle
+eb -4 -- -- -- 23 	cltl
+eb -4 -- -- -- 2b 	clgtl
+eb -4 -- -- -- e2 	locgl
+eb -4 -- -- -- e3 	stocgl
+eb -4 -- -- -- f2 	locl
+eb -4 -- -- -- f3 	stocl
+eb -5 -- -- -- e2 	locgnhe
+eb -5 -- -- -- e3 	stocgnhe
+eb -5 -- -- -- f2 	locnhe
+eb -5 -- -- -- f3 	stocnhe
+eb -6 -- -- -- 23 	cltne
+eb -6 -- -- -- 2b 	clgtne
+eb -6 -- -- -- e2 	locglh
+eb -6 -- -- -- e3 	stocglh
+eb -6 -- -- -- f2 	loclh
+eb -6 -- -- -- f3 	stoclh
+eb -7 -- -- -- e2 	locgne
+eb -7 -- -- -- e3 	stocgne
+eb -7 -- -- -- f2 	locne
+eb -7 -- -- -- f3 	stocne
+eb -8 -- -- -- 23 	clte
+eb -8 -- -- -- 2b 	clgte
+eb -8 -- -- -- e2 	locge
+eb -8 -- -- -- e3 	stocge
+eb -8 -- -- -- f2 	loce
+eb -8 -- -- -- f3 	stoce
+eb -9 -- -- -- e2 	locgnlh
+eb -9 -- -- -- e3 	stocgnlh
+eb -9 -- -- -- f2 	locnlh
+eb -9 -- -- -- f3 	stocnlh
+eb -a -- -- -- 23 	cltnl
+eb -a -- -- -- 2b 	clgtnl
+eb -a -- -- -- e2 	locghe
+eb -a -- -- -- e3 	stocghe
+eb -a -- -- -- f2 	loche
+eb -a -- -- -- f3 	stoche
+eb -b -- -- -- e2 	locgnl
+eb -b -- -- -- e3 	stocgnl
+eb -b -- -- -- f2 	locnl
+eb -b -- -- -- f3 	stocnl
+eb -c -- -- -- 23 	cltnh
+eb -c -- -- -- 2b 	clgtnh
+eb -c -- -- -- e2 	locgle
+eb -c -- -- -- e3 	stocgle
+eb -c -- -- -- f2 	locle
+eb -c -- -- -- f3 	stocle
+eb -d -- -- -- e2 	locgnh
+eb -d -- -- -- e3 	stocgnh
+eb -d -- -- -- f2 	locnh
+eb -d -- -- -- f3 	stocnh
+eb -e -- -- -- e2 	locgno
+eb -e -- -- -- e3 	stocgno
+eb -e -- -- -- f2 	locno
+eb -e -- -- -- f3 	stocno
+ec -- -- -- -- 44 	brxhg
+ec -- -- -- -- 45 	brxlg
+ec -- -- -- -- 51 	risblg
+ec -- -- -- -- 54 	rnsbg
+ec -- -- -- -- 55 	risbg
+ec -- -- -- -- 56 	rosbg
+ec -- -- -- -- 57 	rxsbg
+ec -- -- -- -- 59 	risbgn
+ec -- -- -- -- 5d 	risbhg
+ec -- -- -- -- 64 	cgrj
+ec -- -- -- -- 65 	clgrj
+ec -- -- -- -- 76 	crj
+ec -- -- -- -- 77 	clrj
+ec -- -- -- -- 7c 	cgij
+ec -- -- -- -- 7d 	clgij
+ec -- -- -- -- 7e 	cij
+ec -- -- -- -- 7f 	clij
+ec -- -- -- -- fc 	cgib
+ec -- -- -- -- fd 	clgib
+ec -- -- -- -- fe 	cib
+ec -- -- -- -- ff 	clib
+ec -2 -- -- -- fc 	cgibh
+ec -2 -- -- -- fd 	clgibh
+ec -2 -- -- -- fe 	cibh
+ec -2 -- -- -- ff 	clibh
+ec -4 -- -- -- fc 	cgibl
+ec -4 -- -- -- fd 	clgibl
+ec -4 -- -- -- fe 	cibl
+ec -4 -- -- -- ff 	clibl
+ec -6 -- -- -- fc 	cgibne
+ec -6 -- -- -- fd 	clgibne
+ec -6 -- -- -- fe 	cibne
+ec -6 -- -- -- ff 	clibne
+ec -8 -- -- -- fc 	cgibe
+ec -8 -- -- -- fd 	clgibe
+ec -8 -- -- -- fe 	cibe
+ec -8 -- -- -- ff 	clibe
+ec -a -- -- -- fc 	cgibnl
+ec -a -- -- -- fd 	clgibnl
+ec -a -- -- -- fe 	cibnl
+ec -a -- -- -- ff 	clibnl
+ec -c -- -- -- fc 	cgibnh
+ec -c -- -- -- fd 	clgibnh
+ec -c -- -- -- fe 	cibnh
+ec -c -- -- -- ff 	clibnh
+ed -- -- -- -- 64 	ley
+ed -- -- -- -- 65 	ldy
+ed -- -- -- -- 66 	stey
+ed -- -- -- -- 67 	stdy
+ed -- -- -- -- a8 	czdt
+ed -- -- -- -- a9 	czxt
+ed -- -- -- -- aa 	cdzt
+ed -- -- -- -- ab 	cxzt
+ee -- -- -- -- -- 	plo
+ef -- -- -- -- -- 	lmd
+f0 -- -- -- -- -- 	srp
+f1 -- -- -- -- -- 	mvo
+f2 -- -- -- -- -- 	pack
+f3 -- -- -- -- -- 	unpk
+f8 -- -- -- -- -- 	zap
+f9 -- -- -- -- -- 	cp
+fa -- -- -- -- -- 	ap
+fb -- -- -- -- -- 	sp
+fc -- -- -- -- -- 	mp
+fd -- -- -- -- -- 	dp

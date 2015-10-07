@@ -3,6 +3,4 @@ syntax: glob
 *.s
 *.out
 *core
-04070a.d
-long.d
-tmp/
+allop*.d
