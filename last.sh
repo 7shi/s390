@@ -2,16 +2,16 @@
 
 mkdir -p tmp
 
-for i in {0..63}
-do
-    hex=`printf "%02x" $i`
-    fn="tmp/last-$hex"
-    echo $hex
-    for j in {0..255}
-    do
-        printf ".byte 0x%02x,0x%02x,7,7\n" $i $j
-    done > $fn.s
-done
+#for i in {0..63}
+#do
+#    hex=`printf "%02x" $i`
+#    fn="tmp/last-$hex"
+#    echo $hex
+#    for j in {0..255}
+#    do
+#        printf ".byte 0x%02x,0x%02x,7,7\n" $i $j
+#    done > $fn.s
+#done
 
 for i in {64..191}
 do
@@ -41,7 +41,7 @@ do
     done > $fn.s
 done
 
-for i in {0..255}
+for i in {64..255}
 do
     hex=`printf "%02x" $i`
     fn="tmp/last-$hex"
