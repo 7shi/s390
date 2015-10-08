@@ -1,0 +1,777 @@
+01 01             	pr	
+01 02             	upt	
+01 04             	ptff	
+01 07             	sckpf	
+01 0a             	pfpo	
+01 0b             	tam	
+01 0c             	sam24	
+01 0d             	sam31	
+01 0e             	sam64	
+01 ff             	trap2	
+04 S0             	spm	%rS
+05 ST             	balr	%rS,%rT
+06 ST             	bctr	%rS,%rT
+07 0T             	nopr	%rT
+07 1T             	bor	%rT
+07 2T             	bhr	%rT
+07 3T             	bnler	%rT
+07 4T             	blr	%rT
+07 5T             	bnher	%rT
+07 6T             	blhr	%rT
+07 7T             	bner	%rT
+07 8T             	ber	%rT
+07 9T             	bnlhr	%rT
+07 aT             	bher	%rT
+07 bT             	bnlr	%rT
+07 cT             	bler	%rT
+07 dT             	bnhr	%rT
+07 eT             	bnor	%rT
+07 fT             	br	%rT
+0a SS             	svc	S
+0b ST             	bsm	%rS,%rT
+0c ST             	bassm	%rS,%rT
+0d ST             	basr	%rS,%rT
+0e ST             	mvcl	%rS,%rT
+0f ST             	clcl	%rS,%rT
+10 ST             	lpr	%rS,%rT
+11 ST             	lnr	%rS,%rT
+12 ST             	ltr	%rS,%rT
+13 ST             	lcr	%rS,%rT
+14 ST             	nr	%rS,%rT
+15 ST             	clr	%rS,%rT
+16 ST             	or	%rS,%rT
+17 ST             	xr	%rS,%rT
+18 ST             	lr	%rS,%rT
+19 ST             	cr	%rS,%rT
+1a ST             	ar	%rS,%rT
+1b ST             	sr	%rS,%rT
+1c ST             	mr	%rS,%rT
+1d ST             	dr	%rS,%rT
+1e ST             	alr	%rS,%rT
+1f ST             	slr	%rS,%rT
+20 ST             	lpdr	%fS,%fT
+21 ST             	lndr	%fS,%fT
+22 ST             	ltdr	%fS,%fT
+23 ST             	lcdr	%fS,%fT
+24 ST             	hdr	%fS,%fT
+25 ST             	ldxr	%fS,%fT
+26 ST             	mxr	%fS,%fT
+27 ST             	mxdr	%fS,%fT
+28 ST             	ldr	%fS,%fT
+29 ST             	cdr	%fS,%fT
+2a ST             	adr	%fS,%fT
+2b ST             	sdr	%fS,%fT
+2c ST             	mdr	%fS,%fT
+2d ST             	ddr	%fS,%fT
+2e ST             	awr	%fS,%fT
+2f ST             	swr	%fS,%fT
+30 ST             	lper	%fS,%fT
+31 ST             	lner	%fS,%fT
+32 ST             	lter	%fS,%fT
+33 ST             	lcer	%fS,%fT
+34 ST             	her	%fS,%fT
+35 ST             	ledr	%fS,%fT
+36 ST             	axr	%fS,%fT
+37 ST             	sxr	%fS,%fT
+38 ST             	ler	%fS,%fT
+39 ST             	cer	%fS,%fT
+3a ST             	aer	%fS,%fT
+3b ST             	ser	%fS,%fT
+3c ST             	mder	%fS,%fT
+3d ST             	der	%fS,%fT
+3e ST             	aur	%fS,%fT
+3f ST             	sur	%fS,%fT
+40 ST UV VV       	sth	%rS,V(%rT,%rU)
+41 ST UV VV       	la	%rS,V(%rT,%rU)
+42 ST UV VV       	stc	%rS,V(%rT,%rU)
+43 ST UV VV       	ic	%rS,V(%rT,%rU)
+44 ST UV VV       	ex	%rS,V(%rT,%rU)
+45 ST UV VV       	bal	%rS,V(%rT,%rU)
+46 ST UV VV       	bct	%rS,V(%rT,%rU)
+47 0T UV VV       	nop	V(%rT,%rU)
+47 1T UV VV       	bo	V(%rT,%rU)
+47 2T UV VV       	bh	V(%rT,%rU)
+47 3T UV VV       	bnle	V(%rT,%rU)
+47 4T UV VV       	bl	V(%rT,%rU)
+47 5T UV VV       	bnhe	V(%rT,%rU)
+47 6T UV VV       	blh	V(%rT,%rU)
+47 7T UV VV       	bne	V(%rT,%rU)
+47 8T UV VV       	be	V(%rT,%rU)
+47 9T UV VV       	bnlh	V(%rT,%rU)
+47 aT UV VV       	bhe	V(%rT,%rU)
+47 bT UV VV       	bnl	V(%rT,%rU)
+47 cT UV VV       	ble	V(%rT,%rU)
+47 dT UV VV       	bnh	V(%rT,%rU)
+47 eT UV VV       	bno	V(%rT,%rU)
+47 fT UV VV       	b	V(%rT,%rU)
+48 ST UV VV       	lh	%rS,V(%rT,%rU)
+49 ST UV VV       	ch	%rS,V(%rT,%rU)
+4a ST UV VV       	ah	%rS,V(%rT,%rU)
+4b ST UV VV       	sh	%rS,V(%rT,%rU)
+4c ST UV VV       	mh	%rS,V(%rT,%rU)
+4d ST UV VV       	bas	%rS,V(%rT,%rU)
+4e ST UV VV       	cvd	%rS,V(%rT,%rU)
+4f ST UV VV       	cvb	%rS,V(%rT,%rU)
+50 ST UV VV       	st	%rS,V(%rT,%rU)
+51 ST UV VV       	lae	%rS,V(%rT,%rU)
+54 ST UV VV       	n	%rS,V(%rT,%rU)
+55 ST UV VV       	cl	%rS,V(%rT,%rU)
+56 ST UV VV       	o	%rS,V(%rT,%rU)
+57 ST UV VV       	x	%rS,V(%rT,%rU)
+58 ST UV VV       	l	%rS,V(%rT,%rU)
+59 ST UV VV       	c	%rS,V(%rT,%rU)
+5a ST UV VV       	a	%rS,V(%rT,%rU)
+5b ST UV VV       	s	%rS,V(%rT,%rU)
+5c ST UV VV       	m	%rS,V(%rT,%rU)
+5d ST UV VV       	d	%rS,V(%rT,%rU)
+5e ST UV VV       	al	%rS,V(%rT,%rU)
+5f ST UV VV       	sl	%rS,V(%rT,%rU)
+60 ST UV VV       	std	%fS,V(%rT,%rU)
+67 ST UV VV       	mxd	%fS,V(%rT,%rU)
+68 ST UV VV       	ld	%fS,V(%rT,%rU)
+69 ST UV VV       	cd	%fS,V(%rT,%rU)
+6a ST UV VV       	ad	%fS,V(%rT,%rU)
+6b ST UV VV       	sd	%fS,V(%rT,%rU)
+6c ST UV VV       	md	%fS,V(%rT,%rU)
+6d ST UV VV       	dd	%fS,V(%rT,%rU)
+6e ST UV VV       	aw	%fS,V(%rT,%rU)
+6f ST UV VV       	sw	%fS,V(%rT,%rU)
+70 ST UV VV       	ste	%fS,V(%rT,%rU)
+71 ST UV VV       	ms	%rS,V(%rT,%rU)
+78 ST UV VV       	le	%fS,V(%rT,%rU)
+79 ST UV VV       	ce	%fS,V(%rT,%rU)
+7a ST UV VV       	ae	%fS,V(%rT,%rU)
+7b ST UV VV       	se	%fS,V(%rT,%rU)
+7c ST UV VV       	mde	%fS,V(%rT,%rU)
+7d ST UV VV       	de	%fS,V(%rT,%rU)
+7e ST UV VV       	au	%fS,V(%rT,%rU)
+7f ST UV VV       	su	%fS,V(%rT,%rU)
+80 00 UV VV       	ssm	V(%rU)
+82 00 UV VV       	lpsw	V(%rU)
+83 ST UV VV       	diag	%rS,%rT,V(%rU)
+84 ST UU UU       	brxh	%rS,%rT,0xU
+85 ST UU UU       	brxle	%rS,%rT,0xU
+86 ST UV VV       	bxh	%rS,%rT,V(%rU)
+87 ST UV VV       	bxle	%rS,%rT,V(%rU)
+88 S0 UV VV       	srl	%rS,V(%rU)
+89 S0 UV VV       	sll	%rS,V(%rU)
+8a S0 UV VV       	sra	%rS,V(%rU)
+8b S0 UV VV       	sla	%rS,V(%rU)
+8c S0 UV VV       	srdl	%rS,V(%rU)
+8d S0 UV VV       	sldl	%rS,V(%rU)
+8e S0 UV VV       	srda	%rS,V(%rU)
+8f S0 UV VV       	slda	%rS,V(%rU)
+90 ST UV VV       	stm	%rS,%rT,V(%rU)
+91 SS UV VV       	tm	V(%rU),S
+92 SS UV VV       	mvi	V(%rU),S
+93 00 UV VV       	ts	V(%rU)
+94 SS UV VV       	ni	V(%rU),S
+95 SS UV VV       	cli	V(%rU),S
+96 SS UV VV       	oi	V(%rU),S
+97 SS UV VV       	xi	V(%rU),S
+98 ST UV VV       	lm	%rS,%rT,V(%rU)
+99 ST UV VV       	trace	%rS,%rT,V(%rU)
+9a ST UV VV       	lam	%aS,%aT,V(%rU)
+9b ST UV VV       	stam	%aS,%aT,V(%rU)
+a5 S0 UU UU       	iihh	%rS,U
+a5 S1 UU UU       	iihl	%rS,U
+a5 S2 UU UU       	iilh	%rS,U
+a5 S3 UU UU       	iill	%rS,U
+a5 S4 UU UU       	nihh	%rS,U
+a5 S5 UU UU       	nihl	%rS,U
+a5 S6 UU UU       	nilh	%rS,U
+a5 S7 UU UU       	nill	%rS,U
+a5 S8 UU UU       	oihh	%rS,U
+a5 S9 UU UU       	oihl	%rS,U
+a5 Sa UU UU       	oilh	%rS,U
+a5 Sb UU UU       	oill	%rS,U
+a5 Sc UU UU       	llihh	%rS,U
+a5 Sd UU UU       	llihl	%rS,U
+a5 Se UU UU       	llilh	%rS,U
+a5 Sf UU UU       	llill	%rS,U
+a7 S0 UU UU       	tmlh	%rS,U
+a7 S1 UU UU       	tmll	%rS,U
+a7 S2 UU UU       	tmhh	%rS,U
+a7 S3 UU UU       	tmhl	%rS,U
+a7 S5 UU UU       	bras	%rS,0xU
+a7 S6 UU UU       	brct	%rS,0xU
+a7 S7 UU UU       	brctg	%rS,0xU
+a7 S8 UU UU       	lhi	%rS,U
+a7 S9 UU UU       	lghi	%rS,U
+a7 Sa UU UU       	ahi	%rS,U
+a7 Sb UU UU       	aghi	%rS,U
+a7 Sc UU UU       	mhi	%rS,U
+a7 Sd UU UU       	mghi	%rS,U
+a7 Se UU UU       	chi	%rS,U
+a7 Sf UU UU       	cghi	%rS,U
+a7 S4 UU UU       	brc	S,0xU
+a7 14 UU UU       	jo	0xU
+a7 24 UU UU       	jh	0xU
+a7 34 UU UU       	jnle	0xU
+a7 44 UU UU       	jl	0xU
+a7 54 UU UU       	jnhe	0xU
+a7 64 UU UU       	jlh	0xU
+a7 74 UU UU       	jne	0xU
+a7 84 UU UU       	je	0xU
+a7 94 UU UU       	jnlh	0xU
+a7 a4 UU UU       	jhe	0xU
+a7 b4 UU UU       	jnl	0xU
+a7 c4 UU UU       	jle	0xU
+a7 d4 UU UU       	jnh	0xU
+a7 e4 UU UU       	jno	0xU
+a7 f4 UU UU       	j	0xU
+a8 ST UV VV       	mvcle	%rS,%rT,V(%rU)
+a9 ST UV VV       	clcle	%rS,%rT,V(%rU)
+ac SS UV VV       	stnsm	V(%rU),S
+ad SS UV VV       	stosm	V(%rU),S
+ae ST UV VV       	sigp	%rS,%rT,V(%rU)
+af SS UV VV       	mc	V(%rU),S
+b1 ST UV VV       	lra	%rS,V(%rT,%rU)
+b2 02 UV VV       	stidp	V(%rU)
+b2 04 UV VV       	sck	V(%rU)
+b2 05 UV VV       	stck	V(%rU)
+b2 06 UV VV       	sckc	V(%rU)
+b2 07 UV VV       	stckc	V(%rU)
+b2 08 UV VV       	spt	V(%rU)
+b2 09 UV VV       	stpt	V(%rU)
+b2 0a UV VV       	spka	V(%rU)
+b2 10 UV VV       	spx	V(%rU)
+b2 11 UV VV       	stpx	V(%rU)
+b2 12 UV VV       	stap	V(%rU)
+b2 14 UV VV       	sie	V(%rU)
+b2 18 UV VV       	pc	V(%rU)
+b2 19 UV VV       	sac	V(%rU)
+b2 1a UV VV       	cfc	V(%rU)
+b2 32 UV VV       	msch	V(%rU)
+b2 33 UV VV       	ssch	V(%rU)
+b2 34 UV VV       	stsch	V(%rU)
+b2 35 UV VV       	tsch	V(%rU)
+b2 36 UV VV       	tpi	V(%rU)
+b2 39 UV VV       	stcrw	V(%rU)
+b2 3a UV VV       	stcps	V(%rU)
+b2 74 UV VV       	siga	V(%rU)
+b2 77 UV VV       	rp	V(%rU)
+b2 78 UV VV       	stcke	V(%rU)
+b2 79 UV VV       	sacf	V(%rU)
+b2 7c UV VV       	stckf	V(%rU)
+b2 7d UV VV       	stsi	V(%rU)
+b2 80 UV VV       	lpp	V(%rU)
+b2 84 UV VV       	lcctl	V(%rU)
+b2 85 UV VV       	lpctl	V(%rU)
+b2 86 UV VV       	qsi	V(%rU)
+b2 87 UV VV       	lsctl	V(%rU)
+b2 8e UV VV       	qctri	V(%rU)
+b2 99 UV VV       	srnm	V(%rU)
+b2 9c UV VV       	stfpc	V(%rU)
+b2 9d UV VV       	lfpc	V(%rU)
+b2 b0 UV VV       	stfle	V(%rU)
+b2 b1 UV VV       	stfl	V(%rU)
+b2 b2 UV VV       	lpswe	V(%rU)
+b2 b8 UV VV       	srnmb	V(%rU)
+b2 b9 UV VV       	srnmt	V(%rU)
+b2 bd UV VV       	lfas	V(%rU)
+b2 fc UV VV       	tabort	V(%rU)
+b2 ff UV VV       	trap4	V(%rU)
+b3 44 UU WX       	ledbra	%fW,U,%fX,U
+b3 45 UU WX       	ldxbra	%fW,U,%fX,U
+b3 46 UU WX       	lexbra	%fW,U,%fX,U
+b3 47 UU WX       	fixbra	%fW,U,%fX,U
+b3 53 UU WX       	diebr	%fW,%fU,%fX,U
+b3 57 UU WX       	fiebra	%fW,U,%fX,U
+b3 5b UU WX       	didbr	%fW,%fU,%fX,U
+b3 5f UU WX       	fidbra	%fW,U,%fX,U
+b3 90 UU WX       	celfbr	%fW,U,%rX,U
+b3 91 UU WX       	cdlfbr	%fW,U,%rX,U
+b3 92 UU WX       	cxlfbr	%fW,U,%rX,U
+b3 94 UU WX       	cefbra	%fW,U,%rX,U
+b3 95 UU WX       	cdfbra	%fW,U,%rX,U
+b3 96 UU WX       	cxfbra	%fW,U,%rX,U
+b3 98 UU WX       	cfebra	%rW,U,%fX,U
+b3 99 UU WX       	cfdbra	%rW,U,%fX,U
+b3 9a UU WX       	cfxbra	%rW,U,%fX,U
+b3 9c UU WX       	clfebr	%rW,U,%fX,U
+b3 9d UU WX       	clfdbr	%rW,U,%fX,U
+b3 9e UU WX       	clfxbr	%rW,U,%fX,U
+b3 a0 UU WX       	celgbr	%fW,U,%rX,U
+b3 a1 UU WX       	cdlgbr	%fW,U,%rX,U
+b3 a2 UU WX       	cxlgbr	%fW,U,%rX,U
+b3 a4 UU WX       	cegbra	%fW,U,%rX,U
+b3 a5 UU WX       	cdgbra	%fW,U,%rX,U
+b3 a6 UU WX       	cxgbra	%fW,U,%rX,U
+b3 a8 UU WX       	cgebra	%rW,U,%fX,U
+b3 a9 UU WX       	cgdbra	%rW,U,%fX,U
+b3 aa UU WX       	cgxbra	%rW,U,%fX,U
+b3 ac UU WX       	clgebr	%rW,U,%fX,U
+b3 ad UU WX       	clgdbr	%rW,U,%fX,U
+b3 ae UU WX       	clgxbr	%rW,U,%fX,U
+b3 d0 UU WX       	mdtra	%fW,%fX,%fU,U
+b3 d1 UU WX       	ddtra	%fW,%fX,%fU,U
+b3 d2 UU WX       	adtra	%fW,%fX,%fU,U
+b3 d3 UU WX       	sdtra	%fW,%fX,%fU,U
+b3 d5 UU WX       	ledtr	%fW,U,%fX,U
+b3 d7 UU WX       	fidtr	%fW,U,%fX,U
+b3 d8 UU WX       	mxtra	%fW,%fX,%fU,U
+b3 d9 UU WX       	dxtra	%fW,%fX,%fU,U
+b3 da UU WX       	axtra	%fW,%fX,%fU,U
+b3 db UU WX       	sxtra	%fW,%fX,%fU,U
+b3 dd UU WX       	ldxtr	%fW,U,%fX,U
+b3 df UU WX       	fixtr	%fW,U,%fX,U
+b3 e1 UU WX       	cgdtra	%rW,U,%fX,U
+b3 e9 UU WX       	cgxtra	%rW,U,%fX,U
+b3 f1 UU WX       	cdgtra	%fW,U,%rX,U
+b3 f5 UU WX       	qadtr	%fW,%fU,%fX,U
+b3 f7 UU WX       	rrdtr	%fW,%fU,%rX,U
+b3 f9 UU WX       	cxgtra	%fW,U,%rX,U
+b3 fd UU WX       	qaxtr	%fW,%fU,%fX,U
+b3 ff UU WX       	rrxtr	%fW,%fU,%rX,U
+b6 ST UV VV       	stctl	%cS,%cT,V(%rU)
+b7 ST UV VV       	lctl	%cS,%cT,V(%rU)
+b9 2d U4 WX       	kmctr	%rW,%rX,%rU
+b9 41 UU WX       	cfdtr	%rW,U,%fX,U
+b9 42 UU WX       	clgdtr	%rW,U,%fX,U
+b9 43 UU WX       	clfdtr	%rW,U,%fX,U
+b9 49 UU WX       	cfxtr	%rW,U,%fX,U
+b9 4a UU WX       	clgxtr	%rW,U,%fX,U
+b9 4b UU WX       	clfxtr	%rW,U,%fX,U
+b9 51 UU WX       	cdftr	%fW,U,%rX,U
+b9 52 UU WX       	cdlgtr	%fW,U,%rX,U
+b9 53 UU WX       	cdlftr	%fW,U,%rX,U
+b9 59 UU WX       	cxftr	%fW,U,%rX,U
+b9 5a UU WX       	cxlgtr	%fW,U,%rX,U
+b9 5b UU WX       	cxlftr	%fW,U,%rX,U
+b9 8e U4 WX       	idte	%rW,%rU,%rX
+b9 8f UU WX       	crdte	%rW,%rU,%rX,U
+b9 aa UU WX       	lptea	%rW,%rU,%rX,U
+b9 c8 U4 WX       	ahhhr	%rW,%rX,%rU
+b9 c9 U4 WX       	shhhr	%rW,%rX,%rU
+b9 ca U4 WX       	alhhhr	%rW,%rX,%rU
+b9 cb U4 WX       	slhhhr	%rW,%rX,%rU
+b9 d8 U4 WX       	ahhlr	%rW,%rX,%rU
+b9 d9 U4 WX       	shhlr	%rW,%rX,%rU
+b9 da U4 WX       	alhhlr	%rW,%rX,%rU
+b9 db U4 WX       	slhhlr	%rW,%rX,%rU
+b9 e4 U4 WX       	ngrk	%rW,%rX,%rU
+b9 e6 U4 WX       	ogrk	%rW,%rX,%rU
+b9 e7 U4 WX       	xgrk	%rW,%rX,%rU
+b9 e8 U4 WX       	agrk	%rW,%rX,%rU
+b9 e9 U4 WX       	sgrk	%rW,%rX,%rU
+b9 ea U4 WX       	algrk	%rW,%rX,%rU
+b9 eb U4 WX       	slgrk	%rW,%rX,%rU
+b9 f4 U4 WX       	nrk	%rW,%rX,%rU
+b9 f6 U4 WX       	ork	%rW,%rX,%rU
+b9 f7 U4 WX       	xrk	%rW,%rX,%rU
+b9 f8 U4 WX       	ark	%rW,%rX,%rU
+b9 f9 U4 WX       	srk	%rW,%rX,%rU
+b9 fa U4 WX       	alrk	%rW,%rX,%rU
+b9 fb U4 WX       	slrk	%rW,%rX,%rU
+ba ST UV VV       	cs	%rS,%rT,V(%rU)
+bb ST UV VV       	cds	%rS,%rT,V(%rU)
+bd ST UV VV       	clm	%rS,T,V(%rU)
+be ST UV VV       	stcm	%rS,T,V(%rU)
+bf ST UV VV       	icm	%rS,T,V(%rU)
+c0 S0 UU UU UU UU 	larl	%rS,0xU
+c0 S1 UU UU UU UU 	lgfi	%rS,U
+c0 S5 UU UU UU UU 	brasl	%rS,0xU
+c0 S6 UU UU UU UU 	xihf	%rS,U
+c0 S7 UU UU UU UU 	xilf	%rS,U
+c0 S8 UU UU UU UU 	iihf	%rS,U
+c0 S9 UU UU UU UU 	iilf	%rS,U
+c0 Sa UU UU UU UU 	nihf	%rS,U
+c0 Sb UU UU UU UU 	nilf	%rS,U
+c0 Sc UU UU UU UU 	oihf	%rS,U
+c0 Sd UU UU UU UU 	oilf	%rS,U
+c0 Se UU UU UU UU 	llihf	%rS,U
+c0 Sf UU UU UU UU 	llilf	%rS,U
+c0 S4 UU UU UU UU 	brcl	S,0xU
+c0 14 UU UU UU UU 	jgo	0xU
+c0 24 UU UU UU UU 	jgh	0xU
+c0 34 UU UU UU UU 	jgnle	0xU
+c0 44 UU UU UU UU 	jgl	0xU
+c0 54 UU UU UU UU 	jgnhe	0xU
+c0 64 UU UU UU UU 	jglh	0xU
+c0 74 UU UU UU UU 	jgne	0xU
+c0 84 UU UU UU UU 	jge	0xU
+c0 94 UU UU UU UU 	jgnlh	0xU
+c0 a4 UU UU UU UU 	jghe	0xU
+c0 b4 UU UU UU UU 	jgnl	0xU
+c0 c4 UU UU UU UU 	jgle	0xU
+c0 d4 UU UU UU UU 	jgnh	0xU
+c0 e4 UU UU UU UU 	jgno	0xU
+c0 f4 UU UU UU UU 	jg	0xU
+c2 S0 UU UU UU UU 	msgfi	%rS,U
+c2 S1 UU UU UU UU 	msfi	%rS,U
+c2 S4 UU UU UU UU 	slgfi	%rS,U
+c2 S5 UU UU UU UU 	slfi	%rS,U
+c2 S8 UU UU UU UU 	agfi	%rS,U
+c2 S9 UU UU UU UU 	afi	%rS,U
+c2 Sa UU UU UU UU 	algfi	%rS,U
+c2 Sb UU UU UU UU 	alfi	%rS,U
+c2 Sc UU UU UU UU 	cgfi	%rS,U
+c2 Sd UU UU UU UU 	cfi	%rS,U
+c2 Se UU UU UU UU 	clgfi	%rS,U
+c2 Sf UU UU UU UU 	clfi	%rS,U
+c4 S2 UU UU UU UU 	llhrl	%rS,0xU
+c4 S4 UU UU UU UU 	lghrl	%rS,0xU
+c4 S5 UU UU UU UU 	lhrl	%rS,0xU
+c4 S6 UU UU UU UU 	llghrl	%rS,0xU
+c4 S7 UU UU UU UU 	sthrl	%rS,0xU
+c4 S8 UU UU UU UU 	lgrl	%rS,0xU
+c4 Sb UU UU UU UU 	stgrl	%rS,0xU
+c4 Sc UU UU UU UU 	lgfrl	%rS,0xU
+c4 Sd UU UU UU UU 	lrl	%rS,0xU
+c4 Se UU UU UU UU 	llgfrl	%rS,0xU
+c4 Sf UU UU UU UU 	strl	%rS,0xU
+c5 ST TT WW WW WW 	bprp	S,0xT,0xW
+c6 S0 UU UU UU UU 	exrl	%rS,0xU
+c6 S2 UU UU UU UU 	pfdrl	S,0xU
+c6 S4 UU UU UU UU 	cghrl	%rS,0xU
+c6 S5 UU UU UU UU 	chrl	%rS,0xU
+c6 S6 UU UU UU UU 	clghrl	%rS,0xU
+c6 S7 UU UU UU UU 	clhrl	%rS,0xU
+c6 S8 UU UU UU UU 	cgrl	%rS,0xU
+c6 Sa UU UU UU UU 	clgrl	%rS,0xU
+c6 Sc UU UU UU UU 	cgfrl	%rS,0xU
+c6 Sd UU UU UU UU 	crl	%rS,0xU
+c6 Se UU UU UU UU 	clgfrl	%rS,0xU
+c6 Sf UU UU UU UU 	clrl	%rS,0xU
+c7 S0 UV VV YY YY 	bpp	S,0xY,V(%rU)
+c8 S0 UV VV YZ ZZ 	mvcos	V(%rU),Z(%rY),%rS
+c8 S1 UV VV YZ ZZ 	ectg	V(%rU),Z(%rY),%rS
+c8 S2 UV VV YZ ZZ 	csst	V(%rU),Z(%rY),%rS
+c8 S4 UV VV YZ ZZ 	lpd	%rS,V(%rU),Z(%rY)
+c8 S5 UV VV YZ ZZ 	lpdg	%rS,V(%rU),Z(%rY)
+cc S6 UU UU UU UU 	brcth	%rS,0xU
+cc S8 UU UU UU UU 	aih	%rS,U
+cc Sa UU UU UU UU 	alsih	%rS,U
+cc Sb UU UU UU UU 	alsihn	%rS,U
+cc Sd UU UU UU UU 	cih	%rS,U
+cc Sf UU UU UU UU 	clih	%rS,U
+d0 SS UV VV YZ ZZ 	trtr	V(S,%rU),Z(%rY)
+d1 SS UV VV YZ ZZ 	mvn	V(S,%rU),Z(%rY)
+d2 SS UV VV YZ ZZ 	mvc	V(S,%rU),Z(%rY)
+d3 SS UV VV YZ ZZ 	mvz	V(S,%rU),Z(%rY)
+d4 SS UV VV YZ ZZ 	nc	V(S,%rU),Z(%rY)
+d5 SS UV VV YZ ZZ 	clc	V(S,%rU),Z(%rY)
+d6 SS UV VV YZ ZZ 	oc	V(S,%rU),Z(%rY)
+d7 SS UV VV YZ ZZ 	xc	V(S,%rU),Z(%rY)
+d9 ST UV VV YZ ZZ 	mvck	V(%rS,%rU),Z(%rY),%rT
+da ST UV VV YZ ZZ 	mvcp	V(%rS,%rU),Z(%rY),%rT
+db ST UV VV YZ ZZ 	mvcs	V(%rS,%rU),Z(%rY),%rT
+dc SS UV VV YZ ZZ 	tr	V(S,%rU),Z(%rY)
+dd SS UV VV YZ ZZ 	trt	V(S,%rU),Z(%rY)
+de SS UV VV YZ ZZ 	ed	V(S,%rU),Z(%rY)
+df SS UV VV YZ ZZ 	edmk	V(S,%rU),Z(%rY)
+e1 SS UV VV YZ ZZ 	pku	V(%rU),Z(S,%rY)
+e2 SS UV VV YZ ZZ 	unpku	V(S,%rU),Z(%rY)
+e3 ST UV VV YY 02 	ltg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 03 	lrag	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 04 	lg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 06 	cvby	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 08 	ag	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 09 	sg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 0a 	alg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 0b 	slg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 0c 	msg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 0d 	dsg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 0e 	cvbg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 0f 	lrvg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 12 	lt	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 13 	lray	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 14 	lgf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 15 	lgh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 16 	llgf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 17 	llgt	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 18 	agf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 19 	sgf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 1a 	algf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 1b 	slgf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 1c 	msgf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 1d 	dsgf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 1e 	lrv	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 1f 	lrvh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 20 	cg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 21 	clg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 24 	stg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 25 	ntstg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 26 	cvdy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 2e 	cvdg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 2f 	strvg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 30 	cgf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 31 	clgf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 32 	ltgf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 34 	cgh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 36 	pfd	S,YV(%rT,%rU)
+e3 ST UV VV YY 3e 	strv	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 3f 	strvh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 46 	bctg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 50 	sty	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 51 	msy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 54 	ny	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 55 	cly	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 56 	oy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 57 	xy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 58 	ly	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 59 	cy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 5a 	ay	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 5b 	sy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 5c 	mfy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 5e 	aly	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 5f 	sly	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 70 	sthy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 71 	lay	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 72 	stcy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 73 	icy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 75 	laey	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 76 	lb	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 77 	lgb	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 78 	lhy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 79 	chy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 7a 	ahy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 7b 	shy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 7c 	mhy	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 80 	ng	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 81 	og	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 82 	xg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 85 	lgat	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 86 	mlg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 87 	dlg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 88 	alcg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 89 	slbg	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 8e 	stpq	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 8f 	lpq	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 90 	llgc	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 91 	llgh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 94 	llc	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 95 	llh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 96 	ml	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 97 	dl	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 98 	alc	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 99 	slb	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 9c 	llgtat	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 9d 	llgfat	%rS,YV(%rT,%rU)
+e3 ST UV VV YY 9f 	lat	%rS,YV(%rT,%rU)
+e3 ST UV VV YY c0 	lbh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY c2 	llch	%rS,YV(%rT,%rU)
+e3 ST UV VV YY c3 	stch	%rS,YV(%rT,%rU)
+e3 ST UV VV YY c4 	lhh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY c6 	llhh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY c7 	sthh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY c8 	lfhat	%rS,YV(%rT,%rU)
+e3 ST UV VV YY ca 	lfh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY cb 	stfh	%rS,YV(%rT,%rU)
+e3 ST UV VV YY cd 	chf	%rS,YV(%rT,%rU)
+e3 ST UV VV YY cf 	clhf	%rS,YV(%rT,%rU)
+e5 00 UV VV YZ ZZ 	lasp	V(%rU),Z(%rY)
+e5 01 UV VV YZ ZZ 	tprot	V(%rU),Z(%rY)
+e5 02 UV VV YZ ZZ 	strag	V(%rU),Z(%rY)
+e5 0e UV VV YZ ZZ 	mvcsk	V(%rU),Z(%rY)
+e5 0f UV VV YZ ZZ 	mvcdk	V(%rU),Z(%rY)
+e5 44 UV VV YY YY 	mvhhi	V(%rU),Y
+e5 48 UV VV YY YY 	mvghi	V(%rU),Y
+e5 4c UV VV YY YY 	mvhi	V(%rU),Y
+e5 54 UV VV YY YY 	chhsi	V(%rU),Y
+e5 55 UV VV YY YY 	clhhsi	V(%rU),Y
+e5 58 UV VV YY YY 	cghsi	V(%rU),Y
+e5 59 UV VV YY YY 	clghsi	V(%rU),Y
+e5 5c UV VV YY YY 	chsi	V(%rU),Y
+e5 5d UV VV YY YY 	clfhsi	V(%rU),Y
+e5 60 UV VV YY YY 	tbegin	V(%rU),Y
+e5 61 UV VV YY YY 	tbeginc	V(%rU),Y
+e8 SS UV VV YZ ZZ 	mvcin	V(S,%rU),Z(%rY)
+e9 SS UV VV YZ ZZ 	pka	V(%rU),Z(S,%rY)
+ea SS UV VV YZ ZZ 	unpka	V(S,%rU),Z(%rY)
+eb ST UV VV YY 04 	lmg	%rS,%rT,YV(%rU)
+eb ST UV VV YY 0a 	srag	%rS,%rT,YV(%rU)
+eb ST UV VV YY 0b 	slag	%rS,%rT,YV(%rU)
+eb ST UV VV YY 0c 	srlg	%rS,%rT,YV(%rU)
+eb ST UV VV YY 0d 	sllg	%rS,%rT,YV(%rU)
+eb ST UV VV YY 0f 	tracg	%rS,%rT,YV(%rU)
+eb ST UV VV YY 14 	csy	%rS,%rT,YV(%rU)
+eb ST UV VV YY 1c 	rllg	%rS,%rT,YV(%rU)
+eb ST UV VV YY 1d 	rll	%rS,%rT,YV(%rU)
+eb ST UV VV YY 20 	clmh	%rS,T,YV(%rU)
+eb ST UV VV YY 21 	clmy	%rS,T,YV(%rU)
+eb S2 UV VV YY 23 	clth	%rS,YV(%rU)
+eb ST UV VV YY 24 	stmg	%rS,%rT,YV(%rU)
+eb ST UV VV YY 25 	stctg	%cS,%cT,YV(%rU)
+eb ST UV VV YY 26 	stmh	%rS,%rT,YV(%rU)
+eb S2 UV VV YY 2b 	clgth	%rS,YV(%rU)
+eb ST UV VV YY 2c 	stcmh	%rS,T,YV(%rU)
+eb ST UV VV YY 2d 	stcmy	%rS,T,YV(%rU)
+eb ST UV VV YY 2f 	lctlg	%cS,%cT,YV(%rU)
+eb ST UV VV YY 30 	csg	%rS,%rT,YV(%rU)
+eb ST UV VV YY 31 	cdsy	%rS,%rT,YV(%rU)
+eb ST UV VV YY 3e 	cdsg	%rS,%rT,YV(%rU)
+eb ST UV VV YY 44 	bxhg	%rS,%rT,YV(%rU)
+eb ST UV VV YY 45 	bxleg	%rS,%rT,YV(%rU)
+eb ST UV VV YY 4c 	ecag	%rS,%rT,YV(%rU)
+eb SS UV VV YY 51 	tmy	YV(%rU),S
+eb SS UV VV YY 52 	mviy	YV(%rU),S
+eb SS UV VV YY 54 	niy	YV(%rU),S
+eb SS UV VV YY 55 	cliy	YV(%rU),S
+eb SS UV VV YY 56 	oiy	YV(%rU),S
+eb SS UV VV YY 57 	xiy	YV(%rU),S
+eb SS UV VV YY 6a 	asi	YV(%rU),S
+eb SS UV VV YY 6e 	alsi	YV(%rU),S
+eb SS UV VV YY 7a 	agsi	YV(%rU),S
+eb SS UV VV YY 7e 	algsi	YV(%rU),S
+eb ST UV VV YY 80 	icmh	%rS,T,YV(%rU)
+eb ST UV VV YY 81 	icmy	%rS,T,YV(%rU)
+eb ST UV VV YY 8e 	mvclu	%rS,%rT,YV(%rU)
+eb ST UV VV YY 8f 	clclu	%rS,%rT,YV(%rU)
+eb ST UV VV YY 90 	stmy	%rS,%rT,YV(%rU)
+eb ST UV VV YY 96 	lmh	%rS,%rT,YV(%rU)
+eb ST UV VV YY 98 	lmy	%rS,%rT,YV(%rU)
+eb ST UV VV YY 9a 	lamy	%aS,%aT,YV(%rU)
+eb ST UV VV YY 9b 	stamy	%aS,%aT,YV(%rU)
+eb ST UV VV YY dc 	srak	%rS,%rT,YV(%rU)
+eb ST UV VV YY dd 	slak	%rS,%rT,YV(%rU)
+eb ST UV VV YY de 	srlk	%rS,%rT,YV(%rU)
+eb ST UV VV YY df 	sllk	%rS,%rT,YV(%rU)
+eb S2 UV VV YY e2 	locgh	%rS,YV(%rU)
+eb S2 UV VV YY e3 	stocgh	%rS,YV(%rU)
+eb ST UV VV YY e4 	lang	%rS,%rT,YV(%rU)
+eb ST UV VV YY e6 	laog	%rS,%rT,YV(%rU)
+eb ST UV VV YY e7 	laxg	%rS,%rT,YV(%rU)
+eb ST UV VV YY e8 	laag	%rS,%rT,YV(%rU)
+eb ST UV VV YY ea 	laalg	%rS,%rT,YV(%rU)
+eb S2 UV VV YY f2 	loch	%rS,YV(%rU)
+eb S2 UV VV YY f3 	stoch	%rS,YV(%rU)
+eb ST UV VV YY f4 	lan	%rS,%rT,YV(%rU)
+eb ST UV VV YY f6 	lao	%rS,%rT,YV(%rU)
+eb ST UV VV YY f7 	lax	%rS,%rT,YV(%rU)
+eb ST UV VV YY f8 	laa	%rS,%rT,YV(%rU)
+eb ST UV VV YY fa 	laal	%rS,%rT,YV(%rU)
+eb S1 UV VV YY e2 	locgo	%rS,YV(%rU)
+eb S1 UV VV YY e3 	stocgo	%rS,YV(%rU)
+eb S1 UV VV YY f2 	loco	%rS,YV(%rU)
+eb S1 UV VV YY f3 	stoco	%rS,YV(%rU)
+eb S2 UV VV YY 23 	clth	%rS,YV(%rU)
+eb S2 UV VV YY 2b 	clgth	%rS,YV(%rU)
+eb S2 UV VV YY e2 	locgh	%rS,YV(%rU)
+eb S2 UV VV YY e3 	stocgh	%rS,YV(%rU)
+eb S2 UV VV YY f2 	loch	%rS,YV(%rU)
+eb S2 UV VV YY f3 	stoch	%rS,YV(%rU)
+eb S3 UV VV YY e2 	locgnle	%rS,YV(%rU)
+eb S3 UV VV YY e3 	stocgnle	%rS,YV(%rU)
+eb S3 UV VV YY f2 	locnle	%rS,YV(%rU)
+eb S3 UV VV YY f3 	stocnle	%rS,YV(%rU)
+eb S4 UV VV YY 23 	cltl	%rS,YV(%rU)
+eb S4 UV VV YY 2b 	clgtl	%rS,YV(%rU)
+eb S4 UV VV YY e2 	locgl	%rS,YV(%rU)
+eb S4 UV VV YY e3 	stocgl	%rS,YV(%rU)
+eb S4 UV VV YY f2 	locl	%rS,YV(%rU)
+eb S4 UV VV YY f3 	stocl	%rS,YV(%rU)
+eb S5 UV VV YY e2 	locgnhe	%rS,YV(%rU)
+eb S5 UV VV YY e3 	stocgnhe	%rS,YV(%rU)
+eb S5 UV VV YY f2 	locnhe	%rS,YV(%rU)
+eb S5 UV VV YY f3 	stocnhe	%rS,YV(%rU)
+eb S6 UV VV YY 23 	cltne	%rS,YV(%rU)
+eb S6 UV VV YY 2b 	clgtne	%rS,YV(%rU)
+eb S6 UV VV YY e2 	locglh	%rS,YV(%rU)
+eb S6 UV VV YY e3 	stocglh	%rS,YV(%rU)
+eb S6 UV VV YY f2 	loclh	%rS,YV(%rU)
+eb S6 UV VV YY f3 	stoclh	%rS,YV(%rU)
+eb S7 UV VV YY e2 	locgne	%rS,YV(%rU)
+eb S7 UV VV YY e3 	stocgne	%rS,YV(%rU)
+eb S7 UV VV YY f2 	locne	%rS,YV(%rU)
+eb S7 UV VV YY f3 	stocne	%rS,YV(%rU)
+eb S8 UV VV YY 23 	clte	%rS,YV(%rU)
+eb S8 UV VV YY 2b 	clgte	%rS,YV(%rU)
+eb S8 UV VV YY e2 	locge	%rS,YV(%rU)
+eb S8 UV VV YY e3 	stocge	%rS,YV(%rU)
+eb S8 UV VV YY f2 	loce	%rS,YV(%rU)
+eb S8 UV VV YY f3 	stoce	%rS,YV(%rU)
+eb S9 UV VV YY e2 	locgnlh	%rS,YV(%rU)
+eb S9 UV VV YY e3 	stocgnlh	%rS,YV(%rU)
+eb S9 UV VV YY f2 	locnlh	%rS,YV(%rU)
+eb S9 UV VV YY f3 	stocnlh	%rS,YV(%rU)
+eb Sa UV VV YY 23 	cltnl	%rS,YV(%rU)
+eb Sa UV VV YY 2b 	clgtnl	%rS,YV(%rU)
+eb Sa UV VV YY e2 	locghe	%rS,YV(%rU)
+eb Sa UV VV YY e3 	stocghe	%rS,YV(%rU)
+eb Sa UV VV YY f2 	loche	%rS,YV(%rU)
+eb Sa UV VV YY f3 	stoche	%rS,YV(%rU)
+eb Sb UV VV YY e2 	locgnl	%rS,YV(%rU)
+eb Sb UV VV YY e3 	stocgnl	%rS,YV(%rU)
+eb Sb UV VV YY f2 	locnl	%rS,YV(%rU)
+eb Sb UV VV YY f3 	stocnl	%rS,YV(%rU)
+eb Sc UV VV YY 23 	cltnh	%rS,YV(%rU)
+eb Sc UV VV YY 2b 	clgtnh	%rS,YV(%rU)
+eb Sc UV VV YY e2 	locgle	%rS,YV(%rU)
+eb Sc UV VV YY e3 	stocgle	%rS,YV(%rU)
+eb Sc UV VV YY f2 	locle	%rS,YV(%rU)
+eb Sc UV VV YY f3 	stocle	%rS,YV(%rU)
+eb Sd UV VV YY e2 	locgnh	%rS,YV(%rU)
+eb Sd UV VV YY e3 	stocgnh	%rS,YV(%rU)
+eb Sd UV VV YY f2 	locnh	%rS,YV(%rU)
+eb Sd UV VV YY f3 	stocnh	%rS,YV(%rU)
+eb Se UV VV YY e2 	locgno	%rS,YV(%rU)
+eb Se UV VV YY e3 	stocgno	%rS,YV(%rU)
+eb Se UV VV YY f2 	locno	%rS,YV(%rU)
+eb Se UV VV YY f3 	stocno	%rS,YV(%rU)
+ec ST UU UU 78 44 	brxhg	%rS,%rT,0xU
+ec ST UU UU 78 45 	brxlg	%rS,%rT,0xU
+ec ST UU WW YY 51 	risblg	%rS,%rT,U,W,Y
+ec ST UU WW YY 54 	rnsbg	%rS,%rT,U,W,Y
+ec ST UU WW YY 55 	risbg	%rS,%rT,U,W,Y
+ec ST UU WW YY 56 	rosbg	%rS,%rT,U,W,Y
+ec ST UU WW YY 57 	rxsbg	%rS,%rT,U,W,Y
+ec ST UU WW YY 59 	risbgn	%rS,%rT,U,W,Y
+ec ST UU WW YY 5d 	risbhg	%rS,%rT,U,W,Y
+ec ST UU UU Y8 64 	cgrj	%rS,%rT,Y,0xU
+ec ST UU UU Y8 65 	clgrj	%rS,%rT,Y,0xU
+ec ST UU UU Y8 76 	crj	%rS,%rT,Y,0xU
+ec ST UU UU Y8 77 	clrj	%rS,%rT,Y,0xU
+ec ST UU UU YY 7c 	cgij	%rS,Y,T,0xU
+ec ST UU UU YY 7d 	clgij	%rS,Y,T,0xU
+ec ST UU UU YY 7e 	cij	%rS,Y,T,0xU
+ec ST UU UU YY 7f 	clij	%rS,Y,T,0xU
+ec S2 UV VV YY fc 	cgibh	%rS,Y,V(%rU)
+ec S2 UV VV YY fd 	clgibh	%rS,Y,V(%rU)
+ec S2 UV VV YY fe 	cibh	%rS,Y,V(%rU)
+ec S2 UV VV YY ff 	clibh	%rS,Y,V(%rU)
+ec S2 UV VV YY fc 	cgibh	%rS,Y,V(%rU)
+ec S2 UV VV YY fd 	clgibh	%rS,Y,V(%rU)
+ec S2 UV VV YY fe 	cibh	%rS,Y,V(%rU)
+ec S2 UV VV YY ff 	clibh	%rS,Y,V(%rU)
+ec S4 UV VV YY fc 	cgibl	%rS,Y,V(%rU)
+ec S4 UV VV YY fd 	clgibl	%rS,Y,V(%rU)
+ec S4 UV VV YY fe 	cibl	%rS,Y,V(%rU)
+ec S4 UV VV YY ff 	clibl	%rS,Y,V(%rU)
+ec S6 UV VV YY fc 	cgibne	%rS,Y,V(%rU)
+ec S6 UV VV YY fd 	clgibne	%rS,Y,V(%rU)
+ec S6 UV VV YY fe 	cibne	%rS,Y,V(%rU)
+ec S6 UV VV YY ff 	clibne	%rS,Y,V(%rU)
+ec S8 UV VV YY fc 	cgibe	%rS,Y,V(%rU)
+ec S8 UV VV YY fd 	clgibe	%rS,Y,V(%rU)
+ec S8 UV VV YY fe 	cibe	%rS,Y,V(%rU)
+ec S8 UV VV YY ff 	clibe	%rS,Y,V(%rU)
+ec Sa UV VV YY fc 	cgibnl	%rS,Y,V(%rU)
+ec Sa UV VV YY fd 	clgibnl	%rS,Y,V(%rU)
+ec Sa UV VV YY fe 	cibnl	%rS,Y,V(%rU)
+ec Sa UV VV YY ff 	clibnl	%rS,Y,V(%rU)
+ec Sc UV VV YY fc 	cgibnh	%rS,Y,V(%rU)
+ec Sc UV VV YY fd 	clgibnh	%rS,Y,V(%rU)
+ec Sc UV VV YY fe 	cibnh	%rS,Y,V(%rU)
+ec Sc UV VV YY ff 	clibnh	%rS,Y,V(%rU)
+ed ST UV VV YY 64 	ley	%fS,YV(%rT,%rU)
+ed ST UV VV YY 65 	ldy	%fS,YV(%rT,%rU)
+ed ST UV VV YY 66 	stey	%fS,YV(%rT,%rU)
+ed ST UV VV YY 67 	stdy	%fS,YV(%rT,%rU)
+ed SS UV VV YZ a8 	czdt	%fY,V(S,%rU),Z
+ed SS UV VV YZ a9 	czxt	%fY,V(S,%rU),Z
+ed SS UV VV YZ aa 	cdzt	%fY,V(S,%rU),Z
+ed SS UV VV YZ ab 	cxzt	%fY,V(S,%rU),Z
+ee ST UV VV YZ ZZ 	plo	%rS,V(%rU),%rT,Z(%rY)
+ef ST UV VV YZ ZZ 	lmd	%rS,%rT,V(%rU),Z(%rY)
+f0 ST UV VV YZ ZZ 	srp	V(S,%rU),Z(%rY),T
+f1 ST UV VV YZ ZZ 	mvo	V(S,%rU),Z(T,%rY)
+f2 ST UV VV YZ ZZ 	pack	V(S,%rU),Z(T,%rY)
+f3 ST UV VV YZ ZZ 	unpk	V(S,%rU),Z(T,%rY)
+f8 ST UV VV YZ ZZ 	zap	V(S,%rU),Z(T,%rY)
+f9 ST UV VV YZ ZZ 	cp	V(S,%rU),Z(T,%rY)
+fa ST UV VV YZ ZZ 	ap	V(S,%rU),Z(T,%rY)
+fb ST UV VV YZ ZZ 	sp	V(S,%rU),Z(T,%rY)
+fc ST UV VV YZ ZZ 	mp	V(S,%rU),Z(T,%rY)
+fd ST UV VV YZ ZZ 	dp	V(S,%rU),Z(T,%rY)

@@ -1,4 +1,4 @@
-TARGET = allop.d allop-2.txt allopr.d allopr.txt
+TARGET = allop.d allop-2.txt allopr.d allopr.txt format.txt
 
 AS  = s390-linux-as
 DIS = s390-linux-objdump -d
@@ -56,6 +56,9 @@ allopr.d: allop-3.s
 
 allopr.txt: allopr.d
 	cut -f2- $< | cut -sf2 | sed 's/(\([^)]*\),\([^)]*\))/(\1;\2)/g' | sed 's/,/\n/g' | sed 's/;/,/g' | sort | uniq > $@
+
+format.txt: allopr.d format.pl
+	./format.pl < $< > $@
 
 clean:
 	rm -rf *.o *.s allop[246].d allop-2.d a.out
