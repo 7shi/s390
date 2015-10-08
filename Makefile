@@ -1,4 +1,4 @@
-TARGET = allop.d allop-2.txt
+TARGET = allop.d allop-2.txt allop-3.s
 
 AS  = s390-linux-as
 DIS = s390-linux-objdump -d
@@ -48,8 +48,11 @@ allop-2.d: allop2.d allop4.d allop6.d
 allop-2.txt: allop-2.d allop-2.pl
 	./allop-2.pl < $< > $@
 
+allop-3.s: allop-2.txt allop-3.pl
+	./allop-3.pl < $< > $@
+
 clean:
-	rm -rf *.o *.s allop[246].d a.out
+	rm -rf *.o *.s allop[246].d allop-2.d a.out
 
 distclean: clean
 	rm -f $(TARGET)
